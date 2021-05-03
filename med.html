@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>OXY Landing Page HTML Template</title>
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="assets/css/mdb-pro.min.css">
+  <!-- Material Design Bootstrap Ecommerce -->
+  <link rel="stylesheet" href="assets/css/mdb.ecommerce.min.css">
+  <!-- Your custom styles (optional) -->
+<style>
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+form {
+  transition: all 0.5s;
+  position: absolute;
+  top: 36%;
+  transform: translateY(-50%);
+}
+
+.finder {
+  border: 1px solid #fff;
+  background-color: #f6f5f0;
+  border-radius: 15px;
+  padding: 8px;
+  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.finder__outer {
+  display: flex;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+}
+
+.finder__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.finder__form {
+  flex: 1;
+  height: calc(100% + 3rem);
+}
+
+.finder__input {
+  height: calc(100% + 3rem);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+}
+
+.finder__icon {
+	margin-left: 1%;
+	margin-top: 0.5%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  transition: all 0.2s;
+  box-shadow: inset 0 0 0 20px #292929;
+  border-radius: 50%;
+  position: relative;
+}
+.finder__icon:after, .finder__icon:before {
+  display: block;
+  content: "";
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.finder__icon:after {
+  width: 10px;
+  height: 10px;
+  background-color: #292929;
+  border: 3px solid #f6f5f0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0px;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+.active .finder__icon:after {
+  border-width: 10px;
+  background-color: #f6f5f0;
+}
+
+.finder__icon:before {
+  width: 4px;
+  height: 13px;
+  background-color: #f6f5f0;
+  top: 50%;
+  left: 20px;
+  transform: rotateZ(45deg) translate(-50%, 0);
+  transform-origin: 0 0;
+  border-radius: 4px;
+}
+.active .finder__icon:before {
+  background-color: #292929;
+  width: 6px;
+  transform: rotateZ(45deg) translate(-50%, 25px);
+}
+
+.processing .finder__icon {
+  transform-origin: 50%;
+  animation: spinner 0.3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.active .finder__icon {
+  transform: translateY(-5px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotateZ(45deg);
+  }
+  100% {
+    transform: rotateZ(405deg);
+  }
+}
+._3cTdj {
+    position: relative;
+		}
+	a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    outline: none;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+	}	
+	div {
+    display: block;
+	}
+	._6n5xr {
+    height: 123px;
+	}
+	._8KMep {
+    background: #f4813f;
+    width: 100%;
+    height: 123px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 15px 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+._3Tn87._3Tn87 {
+    max-width: 1366px;
+}
+._1M8sW {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+._2MjsM {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.KbFCX {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+@media (min-width: 1024px) and (max-width: 1365px)
+._3p1_b, ._15jwV {
+    margin-right: 30px;
+}
+._3p1_b, ._15jwV {
+    margin-right: 50px;
+}
+._2V7rq {
+    max-width: 165px;
+    max-height: 50px;
+}
+._536c {
+        height: 212%;
+    padding-left: 29%;
+}
+.oHXcU {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 0.9;
+    position: relative;
+}
+._1xVvP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.wgDA6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+._1disc {
+    max-width: 320px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._1hFGA, ._1NDUW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+._1hFGA {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 15px;
+    height: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+@media (min-width: 1024px) and (max-width: 1365px)
+._1NDUW {
+    display: block;
+}
+._1NDUW {
+    max-width: calc(100% - 16px);
+    color: #10847e;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    white-space: nowrap;
+}
+._1hFGA, ._1NDUW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+._2xei5 {
+    font-weight: 600;
+}
+._1zoLu {
+    margin-left: 15px;
+    height: 20px;
+    width: 1px;
+    background: #dfe3e6;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (min-width: 1024px) and (max-width: 1365px)
+._3p1_b, ._15jwV {
+    margin-right: 30px;
+}
+._3p1_b, ._15jwV {
+    margin-right: 50px;
+}
+._2VyyV {
+    cursor: auto;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+._2qwUd {
+    width: 100%;
+}
+._2b5-9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+._2VyyV._1IvSS ._3lNKn {
+    border: 0 solid transparent;
+	    border-radius: 40px;
+}
+@media (min-width: 1024px)
+._3lNKn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 50px;
+}
+._3lNKn {
+    background: #fff;
+    border: 1px solid #8897a2;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    padding-left: 10px;
+    overflow: hidden;
+    height: 45px;
+}
+._1gc6o, ._1tcdx, ._1zvpF, ._3lNKn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (min-width: 1024px)
+._3lNKn ._1gc6o {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    height: 100%;
+    min-width: 50px;
+    background: #f4f7fb;
+}
+._3lNKn ._1gc6o {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    color: #8897a2;
+}
+._1gc6o, ._1tcdx, ._1zvpF, ._3lNKn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._1gc6o, ._1tcdx, ._1zvpF {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+._3SnXL {
+    position: relative;
+    margin-left: auto;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._1D8Iz {
+    background: rgba(0, 0, 0, .18);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+._35UmJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+._1xVvP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._3l61w {
+    margin-top: 20px;
+}
+._1d9Ep, .SbvHK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.SbvHK {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+._1d9Ep {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._1d9Ep, .SbvHK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.KSY3N {
+    display: block;
+    color: #fff;
+    margin-right: 25px;
+    position: relative;
+    line-height: 21px;
+	text-decoration-line: NONE;
+}
+.KSY3N:last-child {
+    margin-right: 0;
+}
+._3iGxG, .lbgdE {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._3iGxG {
+    margin-left: auto;
+}
+.lbgdE {
+    margin-right: 30px;
+    color: #fff;
+    line-height: 21px;
+}
+.lbgdE img, .lbgdE svg {
+    display: block;
+    margin-right: 5px;
+}
+._2kNHc, ._115IV, .jEJAq {
+    width: 24px;
+}
+.lbgdE._32Xuq, .lbgdE._162OC {
+    position: relative;
+}
+.lbgdE:last-child {
+    margin-right: 0;
+}
+._1NDUW:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border: 6px solid transparent;
+    border-top: 8px solid #8897a2;
+    bottom: 5px;
+}
+.wrap-3d {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding-top: 5%;
+  overflow-x: hidden;
+  
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  transform-style: preserve-3d;
+  perspective: 150rem;
+  perspective-origin: 50% 110%;
+}
+
+.item-3d {
+  width: 100%;
+  padding-bottom: 5%;
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+}
+@media (max-width: 600px) {
+  .item-3d {
+    margin-bottom: 40%;
+  }
+}
+
+.ground {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  margin: 0 auto;
+  background-image: linear-gradient(#d8d8d8, #f2f2f2 60%);
+  background-size: 100%;
+  transform-origin: 50% 100%;
+  transform: rotateX(70deg);
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.ground:before, .ground:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+.ground:before {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  max-width: 50rem;
+  background-image: radial-gradient(#cccccc, rgba(204, 204, 204, 0) 60%);
+  background-size: 50% 80%;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+.ground:after {
+  bottom: -500px;
+  left: 0;
+  height: 500px;
+  background-image: linear-gradient(#d8d8d8, #f2f2f2);
+  transform-origin: 50% 0;
+  transform: rotateX(-70deg);
+}
+
+.item-3d:nth-child(even) .ground:before {
+  background-position: 100% 50%;
+  -webkit-animation: floating-shadow-r 5s -1s infinite;
+          animation: floating-shadow-r 5s -1s infinite;
+}
+
+.item-3d:nth-child(odd) .ground:before {
+  background-position: 0 50%;
+  -webkit-animation: floating-shadow-l 5s -1s infinite;
+          animation: floating-shadow-l 5s -1s infinite;
+}
+
+@-webkit-keyframes floating-shadow-l {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 10% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 0 80%;
+  }
+}
+
+@keyframes floating-shadow-l {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 10% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 0 80%;
+  }
+}
+@-webkit-keyframes floating-shadow-r {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 90% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 100% 80%;
+  }
+}
+@keyframes floating-shadow-r {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 90% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 100% 80%;
+  }
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  transform: translateZ(0);
+}
+
+.item-img {
+  position: relative;
+  float: left;
+  display: block;
+  width: 50%;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  -webkit-animation: floating 5s -1s infinite;
+          animation: floating 5s -1s infinite;
+}
+.item-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: 50% 100%;
+  transform: translateZ(-5rem);
+}
+
+.item-3d:nth-child(even) .item-img {
+  float: right;
+  order: 1;
+}
+
+@-webkit-keyframes floating {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+.item-caption {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.item-3d:nth-child(odd) .item-caption {
+  padding-left: 10%;
+}
+@media (max-width: 600px) {
+  .item-3d:nth-child(odd) .item-caption {
+    padding-left: 5%;
+  }
+}
+
+.item-3d:nth-child(even) .item-caption {
+  text-align: right;
+  padding-right: 10%;
+}
+@media (max-width: 600px) {
+  .item-3d:nth-child(even) .item-caption {
+    padding-right: 5%;
+  }
+}
+
+.item-caption p {
+  font-size: 87.5%;
+  line-height: 1.333;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 600px) {
+  .item-caption p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.item-caption p a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+.item-caption p a:before {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  bottom: 3px;
+  left: 0;
+  height: 1px;
+  background-color: #08c;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.item-caption p a:after {
+  content: ">";
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+.item-caption p a:hover:before, .item-caption p a:active:before, .item-caption p a:focus:before {
+  opacity: 0.5;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 15% 2rem;
+  text-align: center;
+}
+.intro:after {
+  content: "↓";
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  font-size: 150%;
+  -webkit-animation: scroll-arrw 1s -1s infinite linear;
+          animation: scroll-arrw 1s -1s infinite linear;
+}
+
+@-webkit-keyframes scroll-arrw {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(80%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(160%);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-arrw {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(80%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(160%);
+    opacity: 0;
+  }
+}
+.intro h1 {
+  font-size: 250%;
+  font-weight: normal;
+  color: #303030;
+}
+
+.intro p {
+  margin-bottom: 2rem;
+  font-size: 175%;
+  line-height: 1.4286;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides {opacity:unset;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.fade:not(.show) { opacity:unset;}
+</style>
+
+</head>
+
+<body class="skin-light">
+<!-- ***** Preloader Start ***** -->
+    
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <div class="_3cTdj">
+                <div class="_6n5xr"></div>
+                <div class="_8KMep">
+                    <div class="_2MjsM KbFCX _3Tn87 _1M8sW"><a class="_2V7rq _3p1_b" href="index.html"><img class="_536c"
+                                src="assets/images/logo2.jpeg"
+                                alt="PharmEasy logo" /></a>
+                        <div class="oHXcU">
+                            <div class="_1xVvP">
+                                <div class="wgDA6">
+                                    
+                                    <div tabindex="0" role="button"
+                                        class="_2tdEn _1pXi6 _2VyyV _2qwUd _15jwV _1IvSS _10mIt" aria-label="Search">
+                                        <div class="_2b5-9 undefined" >
+													<select class="form-select" aria-label="Default select example" 
+													style="width: 19%;height: 7.5vh;border: none;">
+													  <option selected>Select Location</option>
+													  <option value="1">One</option>
+													  <option value="2">Two</option>
+													  <option value="3">Three</option>
+													</select>                                          
+													<input type="email" 
+													id="exampleFormControlInput1" placeholder="Search for Medicines/ Healthcare Products"
+													style="
+																			width: 76%;
+																			border: none;
+																			margin-left: 0%;
+																			height: 7.5vh;
+																		">
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"style="
+																				background: white;
+																				height: 7.5vh;
+																				width: 3%;
+																				padding-right: 1%;
+																			">
+													  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+													</svg>					
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_3SnXL">
+                                    <div tabindex="0" role="button" class="_2tdEn _1pXi6 _1D8Iz">
+                                        <div>Add a
+                                            <!-- -->prescription
+                                            <!-- -->!
+                                        </div>
+                                        <div class="_35UmJ">Here<svg width="15" height="15" viewBox="0 2 20 20">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_1xVvP">
+                                <div class="SbvHK _3l61w">
+                                    <div class="_1d9Ep"><a class="KSY3N" href="index.html">Instruments</a>
+									<a class="KSY3N" href="index.html">Healthcare
+                                            and Fitness</a><a class="KSY3N" href="index.html">Consult a Doctor</a>
+											<a class="KSY3N" href="index.html">Diagnostic Tests</a>
+											<a class="KSY3N" href="index.html">Quick Order</a></div>
+                                    <div class="_3iGxG"><a class="lbgdE" href="index.html"><img class="jEJAq"
+                                                src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
+                                                alt="" /><span>Discounts</span></a>
+                                        <div tabindex="0" role="button" class="_2tdEn _1pXi6 lbgdE"><img class="_2kNHc"
+                                                src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
+                                                alt="" /><span>Login / Signup</span></div><a class="lbgdE _32Xuq"
+                                            href="cart.html"><img class="_115IV"
+                                                src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
+                                                alt="" /><span>Cart</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Navbar -->
+
+    
+
+ 
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+	<section class="wrap-3d">
+  
+  <div class="item-3d">
+    
+    <figure class="item-content group">
+      <div class="item-img">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="assets/images/med11.jpg" style="width:100%">
+			  
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="assets/images/med12.jpg" style="width:100%">
+			 
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="assets/images/med13.jpg" style="width:100%">
+			  
+			</div>
+
+		</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+      </div>
+      <figcaption class="item-caption">
+        <p>
+          <strong style="font-weight: 900;
+				font-size: 243%;">Medical Description</strong><br>
+          Ecosprin 75 tablet is an antiplatelet medicine.
+		  It is used to prevent the risk of heart attacks, stroke and chest pain (heart-related). It prevents blood clot formation within the body. It should be taken as directed by the doctor and in doses and duration as prescribed. Do not miss any dose or take it more than that prescribed. Before using this medicine, inform the doctor if you are pregnant, planning a pregnancy or breastfeeding and about your detailed medical history.<br>
+          
+        </p>
+        <p>
+          <strong style="font-weight: 900;
+				font-size: 156%;">14 Tablet(s) in Strip</strong><br>
+          MRP 4.17$<br>
+          
+        </p>
+        <p><span style="
+					font-size: 175%;
+				">Qty</span>
+		<select class="form-select" aria-label="Default select example" style="
+														border: none;font-size: 130%;
+														background: #f4813f;
+													">
+			
+			  <option selected>0</option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			</select>
+        </p>
+      </figcaption>
+    </figure>
+  </div>
+  </section>
+  
+  <!--Main layout-->
+
+  
+  <!-- Footer -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <!-- MDB Ecommerce JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.ecommerce.min.js"></script>
+  <script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 2500); // Change image every 2 seconds
+				};
+  </script>
+</body>
+
+</html>
