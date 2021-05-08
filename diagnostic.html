@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en-US">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>OXY Landing Page HTML Template</title>
+  <link rel="stylesheet" href="assets/css/bootstrap1.min.css">
+  
+<head>
+    <title data-react-helmet="true">PharmEasy: Online Pharmacy &amp; Medical Store in India | 5M+ Customers</title>
+    <style>
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+form-select:focus{
+	outline: none;
+}
+form {
+  transition: all 0.5s;
+  position: absolute;
+  top: 36%;
+  transform: translateY(-50%);
+}
+
+.finder {
+  border: 1px solid #fff;
+  background-color: #f6f5f0;
+  border-radius: 15px;
+  padding: 8px;
+  box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.finder__outer {
+  display: flex;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: inset 10px 10px 15px -10px #c3c3c3, inset -10px -10px 15px -10px #ffffff;
+}
+
+.finder__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.finder__form {
+  flex: 1;
+  height: calc(100% + 3rem);
+}
+
+.finder__input {
+  height: calc(100% + 3rem);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.75px;
+}
+
+.finder__icon {
+	margin-left: 1%;
+	margin-top: 0.5%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  transition: all 0.2s;
+  box-shadow: inset 0 0 0 20px #292929;
+  border-radius: 50%;
+  position: relative;
+}
+.finder__icon:after, .finder__icon:before {
+  display: block;
+  content: "";
+  position: absolute;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.finder__icon:after {
+  width: 10px;
+  height: 10px;
+  background-color: #292929;
+  border: 3px solid #f6f5f0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0px;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+.active .finder__icon:after {
+  border-width: 10px;
+  background-color: #f6f5f0;
+}
+
+.finder__icon:before {
+  width: 4px;
+  height: 13px;
+  background-color: #f6f5f0;
+  top: 50%;
+  left: 20px;
+  transform: rotateZ(45deg) translate(-50%, 0);
+  transform-origin: 0 0;
+  border-radius: 4px;
+}
+.active .finder__icon:before {
+  background-color: #292929;
+  width: 6px;
+  transform: rotateZ(45deg) translate(-50%, 25px);
+}
+
+.processing .finder__icon {
+  transform-origin: 50%;
+  animation: spinner 0.3s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.active .finder__icon {
+  transform: translateY(-5px);
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotateZ(45deg);
+  }
+  100% {
+    transform: rotateZ(405deg);
+  }
+}
+._3cTdj {
+    position: relative;
+		}
+	a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    outline: none;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: transparent;
+	}	
+	div {
+    display: block;
+	}
+	._6n5xr {
+    height: 123px;
+	}
+	._8KMep {
+    background: #f4813f;
+    width: 100%;
+    height: 93px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 15px 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+._3Tn87._3Tn87 {
+    max-width: 1316px;
+}
+._1M8sW {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+._2MjsM {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.KbFCX {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+@media (min-width: 1024px) and (max-width: 1365px)
+._3p1_b, ._15jwV {
+    margin-right: 30px;
+}
+._3p1_b, ._15jwV {
+    margin-right: 50px;
+}
+._2V7rq {
+    max-width: 165px;
+    max-height: 50px;
+}
+._536c {
+        height: 212%;
+    padding-left: 29%;
+}
+.oHXcU {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 0.9;
+    position: relative;
+}
+._1xVvP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.wgDA6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+._1disc {
+    max-width: 320px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._1hFGA, ._1NDUW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+._1hFGA {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 15px;
+    height: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+@media (min-width: 1024px) and (max-width: 1365px)
+._1NDUW {
+    display: block;
+}
+._1NDUW {
+    max-width: calc(100% - 16px);
+    color: #10847e;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    white-space: nowrap;
+}
+._1hFGA, ._1NDUW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+._2xei5 {
+    font-weight: 600;
+}
+._1zoLu {
+    margin-left: 15px;
+    height: 20px;
+    width: 1px;
+    background: #dfe3e6;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (min-width: 1024px) and (max-width: 1365px)
+._3p1_b, ._15jwV {
+    margin-right: 30px;
+}
+._3p1_b, ._15jwV {
+    margin-right: 50px;
+}
+._2VyyV {
+    cursor: auto;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+._2qwUd {
+    width: 100%;
+}
+._2b5-9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+._2VyyV._1IvSS ._3lNKn {
+    border: 0 solid transparent;
+	    border-radius: 40px;
+}
+@media (min-width: 1024px)
+._3lNKn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 50px;
+}
+._3lNKn {
+    background: #fff;
+    border: 1px solid #8897a2;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    padding-left: 10px;
+    overflow: hidden;
+    height: 45px;
+}
+._1gc6o, ._1tcdx, ._1zvpF, ._3lNKn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (min-width: 1024px)
+._3lNKn ._1gc6o {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    height: 100%;
+    min-width: 50px;
+    background: #f4f7fb;
+}
+._3lNKn ._1gc6o {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    color: #8897a2;
+}
+._1gc6o, ._1tcdx, ._1zvpF, ._3lNKn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._1gc6o, ._1tcdx, ._1zvpF {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+._3SnXL {
+    position: relative;
+    margin-left: auto;
+}
+._1pXi6._1pXi6._1pXi6 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+._1D8Iz {
+    background: rgba(0, 0, 0, .18);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+._2tdEn {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+._35UmJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+._1xVvP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._3l61w {
+    margin-top: 20px;
+}
+._1d9Ep, .SbvHK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.SbvHK {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+._1d9Ep {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._1d9Ep, .SbvHK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.KSY3N {
+    display: block;
+    color: #fff;
+    margin-right: 25px;
+    position: relative;
+    line-height: 21px;
+	text-decoration-line: NONE;
+}
+.KSY3N:last-child {
+    margin-right: 0;
+}
+._3iGxG, .lbgdE {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+._3iGxG {
+    margin-left: auto;
+}
+.lbgdE {
+    margin-right: 30px;
+    color: #fff;
+    line-height: 21px;
+}
+.lbgdE img, .lbgdE svg {
+    display: block;
+    margin-right: 5px;
+}
+._2kNHc, ._115IV, .jEJAq {
+    width: 24px;
+}
+.lbgdE._32Xuq, .lbgdE._162OC {
+    position: relative;
+}
+.lbgdE:last-child {
+    margin-right: 0;
+}
+._1NDUW:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    border: 6px solid transparent;
+    border-top: 8px solid #8897a2;
+    bottom: 5px;
+}
+	</style>
+</head>
+
+<body class="skin-light">
+<div class="_3cTdj">
+                <div class="_6n5xr"></div>
+                <div class="_8KMep">
+                    <div class="_2MjsM KbFCX _3Tn87 _1M8sW"><a class="_2V7rq _3p1_b" href="index.html"><img class="_536c"
+                                src="assets/images/logo2.jpeg"
+                                alt="PharmEasy logo" /></a>
+                        <div class="oHXcU">
+                            <div class="_1xVvP">
+                                <div class="wgDA6">
+                                    
+                                    <div tabindex="0" role="button"
+                                        class="_2tdEn _1pXi6 _2VyyV _2qwUd _15jwV _1IvSS _10mIt" aria-label="Search">
+                                        <div class="_2b5-9 undefined" >
+													<select class="form-select" aria-label="Default select example" 
+													style="width: 19%;height: 7.5vh;border: none;">
+													  <option selected>Select Location</option>
+													  <option value="1">One</option>
+													  <option value="2">Two</option>
+													  <option value="3">Three</option>
+													</select>                                          
+													<input type="email" 
+													id="exampleFormControlInput1" placeholder="Search for Medicines/ Healthcare Products"
+													style="
+																			width: 75.5%;
+																			border: none;
+																			">
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"style="
+																				background: white;
+																				height: 7.5vh;
+																				width: 2%;
+																				padding-right: 1%;
+																			">
+													  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+													</svg>					
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="_3SnXL">
+                                    <div tabindex="0" role="button" class="_2tdEn _1pXi6 _1D8Iz">
+                                        <div>Add a
+                                            <!-- -->prescription
+                                            <!-- -->!
+                                        </div>
+                                        <div class="_35UmJ">Here<svg width="15" height="15" viewBox="0 2 20 20">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"></path>
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_1xVvP">
+                                <div class="SbvHK _3l61w">
+                                    <div class="_1d9Ep"><a class="KSY3N" href="index.html">Instruments</a>
+									<a class="KSY3N" href="index.html">Healthcare
+                                            and Fitness</a><a class="KSY3N" href="index.html">Consult a Doctor</a>
+											<a class="KSY3N" href="index.html">Diagnostic Tests</a>
+											<a class="KSY3N" href="index.html">Quick Order</a></div>
+                                    <div class="_3iGxG"><a class="lbgdE" href="index.html"><img class="jEJAq"
+                                                src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
+                                                alt="" /><span>Discounts</span></a>
+                                        <div tabindex="0" role="button" class="_2tdEn _1pXi6 lbgdE"><img class="_2kNHc"
+                                                src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
+                                                alt="" /><span>Login / Signup</span></div><a class="lbgdE _32Xuq"
+                                            href="cart.html"><img class="_115IV"
+                                                src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
+                                                alt="" /><span>Cart</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="container"style="
+								margin-top: 4%;
+							">
+			  <div class="row">
+				<div class="col">
+				  <div class="card">
+				  <div class="card-header" style="
+						background: transparent;
+						font-size: 4vh;
+					">
+					Order Medicines Online
+				  </div>
+				  <div class="card-body" style="
+						background: #f4813f;
+					">
+					<h5 class="card-title" style="color: white;font-size: 3vh;">Search for Medicines / Healthcare Products</h5>
+					<div class="container">
+					  <div class="row">
+						<div class="col-2">
+						  <select class="form" aria-label="Default select example"
+						  style="
+								height: 76%;
+								width: 138%;
+								border: 0;
+								
+							">
+							  <option selected>Select Location</option>
+							  <option value="1">One</option>
+							  <option value="2">Two</option>
+							  <option value="3">Three</option>
+							</select>
+						</div>
+						<div class="col-8">
+						  <div class="input-group mb-3">
+							  <input type="text" style="
+								border: 0;
+								/* margin-left: 0%; */
+							"class="form-control" placeholder="Search for Medicines/ Healthcare Products" aria-label="Recipient's username" aria-describedby="basic-addon2">
+							  
+							</div>
+						</div>
+						
+					  </div>
+					</div>
+				  </div>
+				</div>
+				</div>
+				<div class="col">
+				  <div class="card">
+					  <div class="card-body">
+					  <h5 style="
+							font-size: 4vh;
+													">
+						<svg style="
+								height: 10vh;
+								width: 8vh;
+								
+								color: #f4813f;xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upc-scan" viewBox="0 0 16 16">
+							  <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+							</svg> Upload Prescription<svg style="
+										padding-left: 30%;
+									"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+						  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+						</svg></h5>
+					  </div>
+					  <svg height="1" width="100%">
+						  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#dfdfdf;stroke-width:2" />
+						</svg>
+					  <div class="card-body">
+												<h5 class="card-title" style="
+							font-size: 4vh;
+													"><svg style="
+								height: 10vh;
+								width: 8vh;
+								
+								color: #f4813f;
+							"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-x" viewBox="0 0 16 16">
+							  <path fill-rule="evenodd" d="M6.146 7.146a.5.5 0 0 1 .708 0L8 8.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 9l1.147 1.146a.5.5 0 0 1-.708.708L8 9.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 9 6.146 7.854a.5.5 0 0 1 0-.708z"/>
+							  <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+							  <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+							</svg> Don't have a Prescription ?<svg style="
+										padding-left: 19%;
+									"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+								  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+								</svg></h5>
+						<p class="card-text"style="
+									font-size: 2.7vh;
+									padding-left:14%;
+								"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+									  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+									  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+									</svg> Add medicines to your cart.<br><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+									  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+									  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+									</svg>
+									Select Free Doctor Consultation at checkout.</p>
+						<a href="#" class="btn btn-primary" style="
+										background-color: #f4813f;
+										border-color: #f4813f;
+										margin-left: 14%;
+										margin-top: 2%;
+										width: 63%;
+										height: 6vh;
+										font-size: 145%;
+									">Or Call on +91 998989898<svg style="
+										padding-left: 0%;
+										width: 15%;
+										height: 52%;
+									"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
+										  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+										</svg></a>
+					  </div>
+					  <svg height="1" width="100%">
+						  <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#dfdfdf;stroke-width:2" />
+						</svg>
+					  <div class="card-body">
+					  <h5 style="
+							font-size: 4vh;
+													">
+						<svg style="
+								height: 10vh;
+								width: 8vh;
+								
+								color: #f4813f;xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyedropper" viewBox="0 0 16 16">
+						  <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708l-2-2zM2 12.707l7-7L10.293 7l-7 7H2v-1.293z"/>
+						</svg> Lab Tests<svg style="
+										padding-left: 30%;
+									"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+						  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+						</svg></h5>
+					  </div>
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+            </body>
+
+</html>
