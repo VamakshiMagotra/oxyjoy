@@ -982,14 +982,28 @@ form {
   if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
+  </script>
    <script>
   window.console = window.console || function(t) {};
 </script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+ <script>
+   // Initialize Firebase
+   var config = {
+	apiKey: "AIzaSyCY8MwZCCO_SX32X10F7mV-A-b3rjianCk",
+    authDomain: "oxylogin-c3d7e.firebaseapp.com",
+    databaseURL: "https://oxylogin-c3d7e-default-rtdb.firebaseio.com",
+    projectId: "oxylogin-c3d7e",
+    storageBucket: "oxylogin-c3d7e.appspot.com",
+    messagingSenderId: "117193166181",
+    appId: "1:117193166181:web:59d8cb823f3d682ddce58c"
+   };
 
-</script>
+   firebase.initializeApp(config);
+ </script>
 </head>
 
-<body class="skin-light">
+<body class="skin-light" onload="display_user()">
 <!-- ***** Preloader Start ***** -->
     
     <!-- ***** Preloader End ***** -->
@@ -1120,14 +1134,13 @@ form {
         <p>
           <strong style="font-weight: 900;
 				font-size: 243%;">Medical Description</strong><br>
-          Ecosprin 75 tablet is an antiplatelet medicine.
-		  It is used to prevent the risk of heart attacks, stroke and chest pain (heart-related). It prevents blood clot formation within the body. It should be taken as directed by the doctor and in doses and duration as prescribed. Do not miss any dose or take it more than that prescribed. Before using this medicine, inform the doctor if you are pregnant, planning a pregnancy or breastfeeding and about your detailed medical history.<br>
+          Ecosprin <span id="About"></span><br>
           
         </p>
         <p>
           <strong style="font-weight: 900;
-				font-size: 156%;">14 Tablet(s) in Strip</strong><br>
-          MRP 4.17$<br>
+				font-size: 156%;"><span id="Tablets"></span> Tablet(s) in Strip</strong><br>
+          MRP <span id="MRP"></span>$<br>
           
         </p>
         <p><span style="
@@ -1213,9 +1226,22 @@ form {
   <script type="text/javascript" src="assets/js/mdb.min.js"></script>
     <!-- MDB Ecommerce JavaScript -->
     <script type="text/javascript" src="assets/js/mdb.ecommerce.min.js"></script>
-    
-//# sourceURL=pen.js
-    </script>
+     <script>
+	 function display_user(){
+	  var userDataRef = firebase.database().ref("medicines/");
+		userDataRef.on("child_added", function(data, prevChildKey) {
+		   var newPlayer = data.val();
+		   console.log("About: " + newPlayer.About);
+		   console.log("MRP: " + newPlayer.MRP);
+		   console.log("Tablets: " + newPlayer.Tablets);
+		document.getElementById("About").innerHTML = newPlayer.About;
+		document.getElementById("MRP").innerHTML = newPlayer.MRP;
+		document.getElementById("Tablets").innerHTML = newPlayer.Tablets;
+		   
+		});
+		
+		};
+	 </script>
   <script>
 				var slideIndex = 0;
 				showSlides();
