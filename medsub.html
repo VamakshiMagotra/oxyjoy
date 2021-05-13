@@ -1,20 +1,170 @@
-<!doctype html>
-<html lang="en-US">
-<meta charset="utf-8">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>OXY Landing Page HTML Template</title>
-  <link rel="stylesheet" href="assets/css/bootstrap1.min.css">
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="assets/css/mdb-pro.min.css">
+  <!-- Material Design Bootstrap Ecommerce -->
+  <link rel="stylesheet" href="assets/css/mdb.ecommerce.min.css">
+  <!-- Your custom styles (optional) -->
+<style>
+.add-to-cart {
+  --background-default: #17171B;
+  --background-hover: #0A0A0C;
+  --background-scale: 1;
+  --text-color: #fff;
+  --text-o: 1;
+  --text-x: 12px;
+  --cart: #fff;
+  --cart-x: -48px;
+  --cart-y: 0px;
+  --cart-rotate: 0deg;
+  --cart-scale: .75;
+  --cart-clip: 0px;
+  --cart-clip-x: 0px;
+  --cart-tick-offset: 10px;
+  --cart-tick-color: #FF328B;
+  --shirt-y: -16px;
+  --shirt-scale: 0;
+  --shirt-color: #17171B;
+  --shirt-logo: #fff;
+  --shirt-second-y: 24px;
+  --shirt-second-color: #fff;
+  --shirt-second-logo: #17171B;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+  padding: 12px 0;
+  width: 164px;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+}
+.add-to-cart:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  transition: background 0.25s;
+  background: var(--background, var(--background-default));
+  transform: scaleX(var(--background-scale)) translateZ(0);
+}
+.add-to-cart:not(.active):hover {
+  --background: var(--background-hover);
   
-<head>
-    <title data-react-helmet="true">PharmEasy: Online Pharmacy &amp; Medical Store in India | 5M+ Customers</title>
-    <style>
+}
+.add-to-cart span {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-color);
+  opacity: var(--text-o);
+  transform: translateX(var(--text-x)) translateZ(0);
+}
+.add-to-cart svg {
+  display: block;
+  width: var(--svg-width, 24px);
+  height: var(--svg-height, 24px);
+  position: var(--svg-position, relative);
+  left: var(--svg-left, 0);
+  top: var(--svg-top, 0);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.add-to-cart svg path {
+  fill: var(--svg-fill, none);
+  stroke: var(--svg-stroke, none);
+  stroke-width: var(--svg-stroke-width, 2);
+}
+.add-to-cart .morph {
+  --svg-width: 64px;
+  --svg-height: 13px;
+  --svg-left: 50%;
+  --svg-top: -12px;
+  --svg-position: absolute;
+  --svg-fill: var(--background, var(--background-default));
+  transition: fill 0.25s;
+  pointer-events: none;
+  margin-left: -32px;
+}
+.add-to-cart .shirt,
+.add-to-cart .cart {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+}
+.add-to-cart .shirt {
+  margin: -12px 0 0 -12px;
+  top: 0;
+  transform-origin: 50% 100%;
+  transform: translateY(var(--shirt-y)) scale(var(--shirt-scale));
+}
+.add-to-cart .shirt svg {
+  --svg-fill: var(--shirt-color);
+}
+.add-to-cart .shirt svg g {
+  --svg-fill: var(--svg-g-fill, var(--shirt-logo));
+}
+.add-to-cart .shirt svg.second {
+  --svg-fill: var(--shirt-second-color);
+  --svg-g-fill: var(--shirt-second-logo);
+  --svg-position: absolute;
+  -webkit-clip-path: polygon(0 var(--shirt-second-y), 24px var(--shirt-second-y), 24px 24px, 0 24px);
+          clip-path: polygon(0 var(--shirt-second-y), 24px var(--shirt-second-y), 24px 24px, 0 24px);
+}
+.add-to-cart .cart {
+  --svg-width: 36px;
+  --svg-height: 26px;
+  --svg-stroke: var(--cart);
+  top: 10px;
+  margin-left: -18px;
+  transform: translate(var(--cart-x), var(--cart-y)) rotate(var(--cart-rotate)) scale(var(--cart-scale)) translateZ(0);
+}
+.add-to-cart .cart:before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 12px;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  background: var(--cart);
+  -webkit-clip-path: polygon(0 0, 22px 0, calc(22px - var(--cart-clip-x)) var(--cart-clip), var(--cart-clip-x) var(--cart-clip));
+          clip-path: polygon(0 0, 22px 0, calc(22px - var(--cart-clip-x)) var(--cart-clip), var(--cart-clip-x) var(--cart-clip));
+}
+.add-to-cart .cart path.wheel {
+  --svg-stroke-width: 1.5;
+}
+.add-to-cart .cart path.tick {
+  --svg-stroke: var(--cart-tick-color);
+  stroke-dasharray: 10px;
+  stroke-dashoffset: var(--cart-tick-offset);
+}
 input:focus, textarea:focus, select:focus{
         outline: none;
     }
-form-select:focus{
-	outline: none;
-}
 form {
   transition: all 0.5s;
   position: absolute;
@@ -149,7 +299,7 @@ form {
 	._8KMep {
     background: #f4813f;
     width: 100%;
-    height: 93px;
+    height: 123px;
     position: fixed;
     top: 0;
     left: 0;
@@ -164,10 +314,10 @@ form {
     transition: all .3s;
 }
 ._3Tn87._3Tn87 {
-    max-width: 1316px;
+    max-width: 1366px;
 }
 ._1M8sW {
-    padding-left: 0px;
+    padding-left: 15px;
     padding-right: 15px;
 }
 ._2MjsM {
@@ -495,11 +645,372 @@ form {
     border-top: 8px solid #8897a2;
     bottom: 5px;
 }
-	</style>
+.wrap-3d {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding-top: 3%;
+  overflow-x: hidden;
+  
+  -webkit-overflow-scrolling: touch;
+  background-color: white;
+  transform-style: preserve-3d;
+  perspective: 150rem;
+  perspective-origin: 50% 110%;
+}
+
+.item-3d {
+  width: 100%;
+  padding-bottom: 5%;
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+}
+@media (max-width: 600px) {
+  .item-3d {
+    margin-bottom: 40%;
+  }
+}
+
+.ground {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  bottom: 0;
+  left: -50%;
+  width: 200%;
+  margin: 0 auto;
+  background-image: linear-gradient(#d8d8d8, #f2f2f2 60%);
+  background-size: 100%;
+  transform-origin: 50% 100%;
+  transform: rotateX(70deg);
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.ground:before, .ground:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+.ground:before {
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  max-width: 50rem;
+  background-image: radial-gradient(#cccccc, rgba(204, 204, 204, 0) 60%);
+  background-size: 50% 80%;
+  background-repeat: no-repeat;
+  transform: translateX(-50%);
+}
+.ground:after {
+  bottom: -500px;
+  left: 0;
+  height: 500px;
+  background-image: linear-gradient(#d8d8d8, #f2f2f2);
+  transform-origin: 50% 0;
+  transform: rotateX(-70deg);
+}
+
+.item-3d:nth-child(even) .ground:before {
+  background-position: 100% 50%;
+  -webkit-animation: floating-shadow-r 5s -1s infinite;
+          animation: floating-shadow-r 5s -1s infinite;
+}
+
+.item-3d:nth-child(odd) .ground:before {
+  background-position: 0 50%;
+  -webkit-animation: floating-shadow-l 5s -1s infinite;
+          animation: floating-shadow-l 5s -1s infinite;
+}
+
+@-webkit-keyframes floating-shadow-l {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 10% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 0 80%;
+  }
+}
+
+@keyframes floating-shadow-l {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 10% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 0 80%;
+  }
+}
+@-webkit-keyframes floating-shadow-r {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 90% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 100% 80%;
+  }
+}
+@keyframes floating-shadow-r {
+  0%, 100% {
+    background-size: 35% 80%;
+    background-position: 90% 80%;
+  }
+  50% {
+    background-size: 50% 80%;
+    background-position: 100% 80%;
+  }
+}
+.item-content {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  transform: translateZ(0);
+}
+
+.item-img {
+  position: relative;
+  float: left;
+  display: block;
+  width: 50%;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  -webkit-animation: floating 5s -1s infinite;
+          animation: floating 5s -1s infinite;
+}
+.item-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: 50% 100%;
+  transform: translateZ(-5rem);
+}
+
+.item-3d:nth-child(even) .item-img {
+  float: right;
+  order: 1;
+}
+
+@-webkit-keyframes floating {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+.item-caption {
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.item-3d:nth-child(odd) .item-caption {
+  padding-left: 10%;
+}
+@media (max-width: 600px) {
+  .item-3d:nth-child(odd) .item-caption {
+    padding-left: 5%;
+  }
+}
+
+.item-3d:nth-child(even) .item-caption {
+  text-align: right;
+  padding-right: 10%;
+}
+@media (max-width: 600px) {
+  .item-3d:nth-child(even) .item-caption {
+    padding-right: 5%;
+  }
+}
+
+.item-caption p {
+  font-size: 87.5%;
+  line-height: 1.333;
+  margin-bottom: 1.25rem;
+}
+@media (max-width: 600px) {
+  .item-caption p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.item-caption p a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+.item-caption p a:before {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  bottom: 3px;
+  left: 0;
+  height: 1px;
+  background-color: #08c;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.item-caption p a:after {
+  content: ">";
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+.item-caption p a:hover:before, .item-caption p a:active:before, .item-caption p a:focus:before {
+  opacity: 0.5;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 15% 2rem;
+  text-align: center;
+}
+.intro:after {
+  content: "↓";
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  font-size: 150%;
+  -webkit-animation: scroll-arrw 1s -1s infinite linear;
+          animation: scroll-arrw 1s -1s infinite linear;
+}
+
+@-webkit-keyframes scroll-arrw {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(80%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(160%);
+    opacity: 0;
+  }
+}
+
+@keyframes scroll-arrw {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(80%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(160%);
+    opacity: 0;
+  }
+}
+.intro h1 {
+  font-size: 250%;
+  font-weight: normal;
+  color: #303030;
+}
+
+.intro p {
+  margin-bottom: 2rem;
+  font-size: 175%;
+  line-height: 1.4286;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.mySlides {opacity:unset;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.fade:not(.show) { opacity:unset;}
+</style>
+ <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+  </script>
+   <script>
+  window.console = window.console || function(t) {};
+</script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+ <script>
+   // Initialize Firebase
+   var config = {
+	apiKey: "AIzaSyCY8MwZCCO_SX32X10F7mV-A-b3rjianCk",
+    authDomain: "oxylogin-c3d7e.firebaseapp.com",
+    databaseURL: "https://oxylogin-c3d7e-default-rtdb.firebaseio.com",
+    projectId: "oxylogin-c3d7e",
+    storageBucket: "oxylogin-c3d7e.appspot.com",
+    messagingSenderId: "117193166181",
+    appId: "1:117193166181:web:59d8cb823f3d682ddce58c"
+   };
+
+   firebase.initializeApp(config);
+ </script>
 </head>
 
-<body class="skin-light">
-<div class="_3cTdj">
+<body class="skin-light" onload="display_user()">
+<!-- ***** Preloader Start ***** -->
+    
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <div class="_3cTdj">
                 <div class="_6n5xr"></div>
                 <div class="_8KMep">
                     <div class="_2MjsM KbFCX _3Tn87 _1M8sW"><a class="_2V7rq _3p1_b" href="index.html"><img class="_536c"
@@ -522,13 +1033,15 @@ form {
 													<input type="email" 
 													id="exampleFormControlInput1" placeholder="Search for Medicines/ Healthcare Products"
 													style="
-																			width: 75.5%;
+																			width: 76%;
 																			border: none;
-																			">
+																			margin-left: 0%;
+																			height: 7.5vh;
+																		">
 													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"style="
 																				background: white;
 																				height: 7.5vh;
-																				width: 2%;
+																				width: 3%;
 																				padding-right: 1%;
 																			">
 													  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -572,236 +1085,97 @@ form {
                     </div>
                 </div>
             </div>
-			<div class="container"style="
-								margin-top: 4%;
-							">
-							
-			  <div class="row">
-				<div class="col-3"style="
-						margin-right: 7%;
+    <!-- ***** Header Area End ***** -->
+
+    <!-- Navbar -->
+
+    
+
+ 
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+	<div class="container" style="margin-top: 5%;">
+	  <div class="row">
+		<div class="col-3">
+		  <div class="card">
+			  <img id="img" class="card-img-top" alt="..." style="
+						height: 31vh;
+						width: 68%;
+						margin-left: 15%;
 					">
-				  <div class="card" style="
-										background-color: #f4813fb3;
-										border-color: transparent;">
-							  <img src="assets/images/ayurveda.jpg" style="
-								border-radius: 50%;
-								/* height: 40%; */
-								width: 95%;
-								margin-left: 3%;
-								margin-top: 10%;
-							"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										margin-left: 23%;
-										font-size: 161%;
-									">Ayurveda</a>
-							  </div>
-							</div>
-							
-			</div>
-			<div class="col-3" style="
-						margin-right: 7%;
+			  <div class="card-body" style="
+						width: 62%;
 					">
-				  <div class="card" style="
-										background-color: #007bff87;
-										border-color: transparent;">
-							  <img src="assets/images/homeo.jpg" style="
-								border-radius: 50%;
-								/* height: 40%; */
-								width: 95%;
-								margin-left: 3%;
-								margin-top: 10%;
-							"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										margin-left: 23%;
-										font-size: 161%;
-									">Homeopathy</a>
-							  </div>
-							</div>
-							
+				<h5 class="card-title" id="Name"></h5>
+				<p class="card-text" >Tablets <span id="Tablets"></span></p>
+				<p class="card-text" >MRP  <span id="MRP"></span></p>
+				
+				<a href="med.html" class="btn btn-primary" style="
+							height: 7vh;
+							width: 181%;
+							margin-top: 5%;
+						">view More</a>
+			  </div>
 			</div>
-			<div class="col-3">
-				  <div class="card" style="
-										background-color: #28a745cc;
-										border-color: transparent;">
-							  <img src="assets/images/alopath.jpg" style="
-								border-radius: 50%;
-								/* height: 40%; */
-								width: 95%;
-								margin-left: 3%;
-								margin-top: 10%;
-							"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="medsub.html" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										margin-left: 23%;
-										font-size: 161%;
-									">Allopathy</a>
-							  </div>
-							</div>
-							
-			</div>
-			
-			</div>
-			</div>
-			<h1 style="
-				font-size: 251%;
-				margin-top: 2%;
-				margin-left: 7%;
-			">All Medicines</h1>
-			<div class="container"style="
-								margin-top: 4%;
-							">
-							
-			  <div class="row" style=" margin-bottom:3%;">
-				<div class="col-2">
-				  <div class="card" style="
-										background-color: #8b948d54;
-										border-color: transparent;
-										height: 29vh;">
-							  <img src="assets/images/icons/skincare.png" style="
-												height: 68%;
-												width: 54%;
-												margin-left: 18%;
-											"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										color: black;
-										font-weight: bold;
-										font-size: 161%;
-									">Skin Care</a>
-							  </div>
-							</div>
-							
-			</div>
-			<div class="col-2">
-				  <div class="card" style="
-										background-color: #8b948d54;
-										border-color: transparent;
-										height: 29vh;">
-							  <img src="assets/images/icons/hairdresser.png" style="
-												height: 58%;
-												width: 54%;
-												margin-left: 20%;
-												margin-top: 4%;
-											"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										color: black;
-										font-weight: bold;
-										font-size: 161%;
-									">Hair Care</a>
-							  </div>
-							</div>
-							
-			</div>
-			<div class="col-2">
-				  <div class="card" style="
-										background-color: #8b948d54;
-										border-color: transparent;
-										height: 29vh;">
-							  <img src="assets/images/icons/glucose-meter.png" style="
-												height: 68%;
-												width: 72%;
-												margin-left: 11%;
-											"
-											"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										color: black;
-										font-weight: bold;
-										font-size: 161%;
-									">Diabetic</a>
-							  </div>
-							</div>
-							
-			</div>
-			<div class="col-2">
-				  <div class="card" style="
-										background-color: #8b948d54;
-										border-color: transparent;
-										height: 29vh;">
-							  <img src="assets/images/icons/sexual.png" style="
-												height: 48%;
-												width: 51%;
-												margin-left: 27%;
-												margin-top: 2%;
-											"
-											"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										color: black;
-										font-weight: bold;
-										font-size: 161%;
-									">Sexual Wellness</a>
-							  </div>
-							</div>
-							
-			</div>
-			<div class="col-2">
-				  <div class="card" style="
-										background-color: #8b948d54;
-										border-color: transparent;
-										height: 29vh;">
-							  <img src="assets/images/icons/stomach.png" style="
-												height: 48%;
-												width: 42%;
-												margin-left: 25%;
-											"
-											"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										color: black;
-										font-weight: bold;
-										font-size: 161%;
-									">Stomach Care</a>
-							  </div>
-							</div>
-							
-			</div>
-			<div class="col-2">
-				  <div class="card" style="
-										background-color: #8b948d54;
-										border-color: transparent;
-										height: 29vh;
-										margin-top: 10%;">
-							  <img src="assets/images/icons/muscle.png" style="
-												height: 48%;
-												width: 50%;
-												margin-left: 24%;
-											"
-											"class="card-img-top" alt="...">
-							  <div class="card-body">
-								<a href="#" class="btn btn-primary" style="
-										background-color: transparent;
-										border-color: transparent;
-										color: black;
-										font-weight: bold;
-										font-size: 161%;
-									">Muscle Care</a>
-							  </div>
-							</div>
-							
-			</div>
-			
-			</div>
-			</div>
-            </body>
+		</div>
+		
+  </div>
+</div>
+  <!--Main layout-->
+
+  
+  <!-- Footer -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <!-- MDB Ecommerce JavaScript -->
+    <script type="text/javascript" src="assets/js/mdb.ecommerce.min.js"></script>
+     <script>
+	 
+	 function display_user(){
+	  var userDataRef = firebase.database().ref("medicines/");
+		userDataRef.on("child_added", function(data, prevChildKey) {
+		   var newPlayer = data.val();
+		   
+		document.getElementById("img").src = newPlayer.img;
+		document.getElementById("Name").innerHTML = newPlayer.Name;
+		document.getElementById("Tablets").innerHTML = newPlayer.Tablets;
+		document.getElementById("MRP").innerHTML = newPlayer.MRP;
+		
+	 
+		});
+		
+		};
+	 </script>
+  <script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 2500); // Change image every 2 seconds
+				};
+  </script>
+</body>
 
 </html>
