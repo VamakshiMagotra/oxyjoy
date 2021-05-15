@@ -1096,32 +1096,10 @@ form {
 
   <!--Main layout-->
 	<div class="container" style="margin-top: 5%;">
-	  <div class="row">
-		<div class="col-3">
-		  <div class="card">
-			  <img id="img" class="card-img-top" alt="..." style="
-						height: 31vh;
-						width: 68%;
-						margin-left: 15%;
-					">
-			  <div class="card-body" style="
-						width: 62%;
-					">
-				<h5 class="card-title" id="Name"></h5>
-				<p class="card-text" >Tablets <span id="Tablets"></span></p>
-				<p class="card-text" >MRP  <span id="MRP"></span></p>
-				
-				<a href="med.html" class="btn btn-primary" style="
-							height: 7vh;
-							width: 181%;
-							margin-top: 5%;
-						">view More</a>
-			  </div>
-			</div>
-		</div>
+	  <div class="row" id ="demo">
 		
-  </div>
-</div>
+	 </div>
+	</div>
   <!--Main layout-->
 
   
@@ -1139,18 +1117,29 @@ form {
     <!-- MDB Ecommerce JavaScript -->
     <script type="text/javascript" src="assets/js/mdb.ecommerce.min.js"></script>
      <script>
-	 
+	 var c=0;
 	 function display_user(){
 	  var userDataRef = firebase.database().ref("medicines/");
 		userDataRef.on("child_added", function(data, prevChildKey) {
 		   var newPlayer = data.val();
 		   
-		document.getElementById("img").src = newPlayer.img;
-		document.getElementById("Name").innerHTML = newPlayer.Name;
-		document.getElementById("Tablets").innerHTML = newPlayer.Tablets;
-		document.getElementById("MRP").innerHTML = newPlayer.MRP;
-		
-	 
+		var x ="";
+		x = x + '<div class="col-3">\
+				<div class="card">\
+			  <img src="'+newPlayer.img+'" class="card-img-top" alt="..." style="\
+						height: 31vh;\
+						width: 68%;\
+						margin-left: 15%;\
+					">\
+			  <div class="card-body" style="\
+						width: 62%;\
+					">\
+				<h5 class="card-title" id="Name'+c+'">'+newPlayer.Name+'</h5>\
+				<p class="card-text" >Tablets '+newPlayer.Tablets+'</span></p>\
+				<p class="card-text" >MRP '+newPlayer.MRP+'</p><a href="med.html" class="btn btn-primary" style="height: 7vh;width: 181%;\
+							margin-top: 5%;">view More</a></div></div></div>';
+		document.getElementById("demo").innerHTML += x;
+		c=c+1;
 		});
 		
 		};
