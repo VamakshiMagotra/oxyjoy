@@ -467,6 +467,7 @@ function phoneAuth() {
 function codeverify() {
     var code=document.getElementById('verificationCode').value;
     coderesult.confirm(code).then(function (result) {
+        save_user();
         alert("Successfully registered");
         var user=result.user;
         console.log(user);
