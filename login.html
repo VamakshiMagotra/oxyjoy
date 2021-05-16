@@ -494,20 +494,20 @@ function codeverify() {
    var cellId = row.insertCell(0);
    var cellName = row.insertCell(1);
    cellId.appendChild(document.createTextNode(childKey));
-   cellName.appendChild(document.createTextNode(childData.phno1));
+   cellName.appendChild(document.createTextNode(childData.number));
    
    rowIndex = rowIndex + 1;
     });
   });
    
   function save_user(){
-   var user_name = document.getElementById('phno1').value;
+   var user_name = document.getElementById('number').value;
   
    var uid = firebase.database().ref().child('users').push().key;
    
    var data = {
     cityname1: uid,
-    phno1: user_name
+    number: user_name
    }
    
    var updates = {};
