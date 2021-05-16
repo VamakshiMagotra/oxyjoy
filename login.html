@@ -328,7 +328,7 @@ select {
 			</div>
 			<span>or </span>
 			<input type="text" placeholder="Location" id="cityname1"/>
-			<input type="text" id="number" placeholder="+923********">
+			<input type="text" id="number1" placeholder="+923********">
 			<select>
 				<option value="client">Client</option>
 				<option value="vendor">Vendor</option>
@@ -503,10 +503,10 @@ function codeverify() {
   });
    
   function save_user(){
-   var user_name = document.getElementById('phno1').value;
+   var user_name = document.getElementById('number1').value;
   
    var uid = firebase.database().ref().child('users').push().key;
-   
+   console.log(uid,user_name)
    var data = {
     cityname1: uid,
     phno1: user_name
