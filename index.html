@@ -563,7 +563,7 @@ form {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="_3SnXL">
+                                <div class="_3SnXL" id="_123v">
                                     <div tabindex="0" role="button" class="_2tdEn _1pXi6 _1D8Iz">
                                         <div>Add a
                                             <!-- -->prescription
@@ -575,10 +575,10 @@ form {
                                             </svg></div>
                                     </div>
                                 </div>
-				<div class="Ojs9t _1-lsk">
+				<div class="Ojs9t _1-lsk" id="123v2" style="display:none;">
 					<div tabindex="0" role="button" class="_2tdEn _1pXi6 kjKnY">x</div>
 					<div class="_10ZfG" style="display:flex;">
-						<strong><span class="_2LLZd">"Don't have a" "prescription""?"></span>
+						<strong><span class="_2LLZd">Don't have a prescription?></span>
 							<div class="_3dTFq"> <span class="_3RCfr">Don't worry</span></div>
 					</div>
 					<div>
@@ -892,7 +892,11 @@ form.addEventListener("submit", ev => {
 //# sourceURL=pen.js
     </script>
 
-  
+  <script>
+	  document.getElementById("_123v").onClick= function(){
+		  document.getElementById("123v2").style.display=block;
+	  }
+	    </script>
 <script>
 		$(document).ready(function(){
 		  $("input").focus(function(){
