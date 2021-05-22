@@ -1,0 +1,105 @@
+
+body {
+    min-height: 100vh;
+    background: #1c1c1c;
+    background: #fba70b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f4813f 0%, #f1556a 100%); /* Chrome 10-25, Safari 5.1-6 */ 
+    background: linear-gradient(to left, #f4813f 0%, #f1556a 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-style: normal;
+    font-weight: 300;
+    padding-top: 70px;
+    overflow-x: hidden;
+}
+.section-btn {
+    background-color: #000;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 26px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .section-btn:hover {
+    background: transparent;
+    border-top-color: #ffffff;
+    border-right-color: #222;
+    border-bottom-color: #ffffff;
+    border-left-color: #222;
+    color: #ffffff;
+  }
+  
+  /*Home section*/
+  #home {
+    background:#f4813f url('../images/home-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+#home .overlay {
+    background: #fba70b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #f4813f 0%, #f1556a 100%); /* Chrome 10-25, Safari 5.1-6 */ 
+    background: linear-gradient(to left, #f4813f 0%, #f1556a 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#home img {
+  width: 100%;
+  height: 100%;
+}
+
+#home .home-thumb h1{
+  font-size: 4.5rem;
+}
+
+#home .home-thumb {
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+#home p,
+#newsletter p {
+  color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+
+#home .section-btn:hover {
+  background: transparent !important;
+}
+
+@media (max-width:420px){
+  #home img{
+      height: 100%;
+      width: 100%;
+    
+  }
+  #home .home-thumb h1{
+    font-size: 2rem;
+  }
+  #home .home-thumb h4{
+    font-size: 1.2rem;
+  }
+ 
+  
+}

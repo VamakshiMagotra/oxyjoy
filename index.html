@@ -506,6 +506,45 @@ form {
     border-top: 8px solid #8897a2;
     bottom: 5px;
 }
+	.modal_2 {
+display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  right: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+
+}
+/* Modal Content */
+.modal_2 .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(226, 23, 23);
+  text-decoration: none;
+  cursor: pointer;
+}
+	
 </style>
 </head>
 
@@ -563,17 +602,26 @@ form {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="_3SnXL">
+                                <div class="_3SnXL" id="_123v">
                                     <div tabindex="0" role="button" class="_2tdEn _1pXi6 _1D8Iz">
                                         <div>Add a
                                             <!-- -->prescription
                                             <!-- -->!
                                         </div>
-                                        <div class="_35UmJ">Here<svg width="15" height="15" viewBox="0 2 20 20">
-                                                <path fill="currentColor" fill-rule="evenodd"
-                                                    d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"></path>
-                                            </svg></div>
+                                        <div class="_35UmJ"><button id="myBtn" style="background-color:rgba(10, 199, 10, 0.418); ">Here</button>
+					    </div>
                                     </div>
+                                </div>
+				<div id="myModal" class="modal_2" >
+                                    <div class="modal-content">
+                                        <span class="close" style="text-align:right;">&times;</span>
+                                        <div>
+                                            <h4 style="font-size: 1.75rem;">Don't have a prescription?</h4>
+                                            <h5 style="font-size: 1.75rem; font-style: italic; ">Add prescription</h5>
+                                        </div>
+                                        <button type="button" class="btn btn-success" style="width: 20%; margin-top: 15px;">Upload </button>
+                                    </div>
+ 
                                 </div>
                             </div>
                             <div class="_1xVvP">
@@ -881,8 +929,35 @@ form.addEventListener("submit", ev => {
 });
 //# sourceURL=pen.js
     </script>
+	
+<!--Modal-->
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
-  
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 <script>
 		$(document).ready(function(){
 		  $("input").focus(function(){
