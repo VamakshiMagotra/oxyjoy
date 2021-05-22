@@ -619,8 +619,14 @@ display: none; /* Hidden by default */
                                             <h4 style="font-size: 1.75rem;">Don't have a prescription?</h4>
                                             <h5 style="font-size: 1.75rem; font-style: italic; ">Add prescription</h5>
                                         </div>
-                                        <button type="button" class="btn btn-success" style="width: 20%;margin-top: 15px;background: #f4813f;border: #f4813f;">Upload </button>
-                                    </div>
+										<div>
+										<br />
+										<input type="file" id="files" multiple /><br />
+										<button type="button" class="btn btn-success" style="width: 20%;margin-top: 15px;background: #f4813f;border: #f4813f;">Upload </button>
+                                    <p id="uploading"></p><br />
+										<progress value="0" max="100" id="progress"></progress>
+										</div>
+                                        </div>
  
                                 </div>
                             </div>
@@ -971,6 +977,86 @@ window.onclick = function(event) {
 			$("section").css("filter", "blur(0px)");
 		  });
 		});
+</script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-storage.js"></script>
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyCY8MwZCCO_SX32X10F7mV-A-b3rjianCk",
+    authDomain: "oxylogin-c3d7e.firebaseapp.com",
+    databaseURL: "https://oxylogin-c3d7e-default-rtdb.firebaseio.com",
+    projectId: "oxylogin-c3d7e",
+    storageBucket: "oxylogin-c3d7e.appspot.com",
+    messagingSenderId: "117193166181",
+    appId: "1:117193166181:web:59d8cb823f3d682ddce58c"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+var files = [];
+document.getElementById("files").addEventListener("change", function(e) {
+  files = e.target.files;
+  for (let i = 0; i < files.length; i++) {
+    console.log(files[i]);
+  }
+});
+
+document.getElementById("send").addEventListener("click", function() {
+  //checks if files are selected
+  if (files.length != 0) {
+    //Loops through all the selected files
+    for (let i = 0; i < files.length; i++) {
+      //create a storage reference
+      var storage = firebase.storage().ref(files[i].name);
+
+      //upload file
+      var upload = storage.put(files[i]);
+
+      //update progress bar
+      upload.on(
+        "state_changed",
+        function progress(snapshot) {
+          var percentage =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          document.getElementById("progress").value = percentage;
+        },
+
+        function error() {
+          alert("error uploading file");
+        },
+
+        function complete() {
+          document.getElementById(
+            "uploading"
+          ).innerHTML += `${files[i].name} upoaded <br />`;
+        }
+      );
+    }
+  } else {
+    alert("No file chosen");
+  }
+});
+
+function getFileUrl(filename) {
+  //create a storage reference
+  var storage = firebase.storage().ref(filename);
+
+  //get file url
+  storage
+    .getDownloadURL()
+    .then(function(url) {
+      console.log(url);
+    })
+    .catch(function(error) {
+      console.log("error encountered");
+    });
+}
 </script>
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
