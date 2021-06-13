@@ -22,6 +22,14 @@
 
     <link rel="stylesheet" href="assets/css/owl-carousel.css">
 	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+       <!-- Roboto Font -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Your custom styles (optional) -->
+
 <style>
 input:focus, textarea:focus, select:focus{
         outline: none;
@@ -193,7 +201,7 @@ form {
     max-width: 1024px;
     margin: 0 auto;
 }
-@media (min-width: 1024px) and (max-width: 1365px)
+@media (min-width: 1024px) and (max-width: 1365px){
 ._3p1_b, ._15jwV {
     margin-right: 30px;
 }
@@ -267,7 +275,8 @@ form {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
-@media (min-width: 1024px) and (max-width: 1365px)
+}
+@media (min-width: 1024px) and (max-width: 1365px){
 ._1NDUW {
     display: block;
 }
@@ -299,7 +308,8 @@ form {
     -ms-user-select: none;
     user-select: none;
 }
-@media (min-width: 1024px) and (max-width: 1365px)
+}
+@media (min-width: 1024px) and (max-width: 1365px){
 ._3p1_b, ._15jwV {
     margin-right: 30px;
 }
@@ -330,8 +340,8 @@ form {
 ._2VyyV._1IvSS ._3lNKn {
     border: 0 solid transparent;
 	    border-radius: 40px;
-}
-@media (min-width: 1024px)
+}}
+@media (min-width: 1024px){
 ._3lNKn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -362,7 +372,8 @@ form {
     -ms-user-select: none;
     user-select: none;
 }
-@media (min-width: 1024px)
+}
+@media (min-width: 1024px){
 ._3lNKn ._1gc6o {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
@@ -506,10 +517,204 @@ form {
     border-top: 8px solid #8897a2;
     bottom: 5px;
 }
+}
+.modal_2 {
+display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  right: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+
+}
+/* Modal Content */
+.modal_2 .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(226, 23, 23);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width:600px){
+  header{
+    margin-bottom: 40px;
+  }
+  .abc2{
+    display:none;
+  }
+  .abc3{
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+  }
+  .abc4{
+      width:120px;
+			height:20px;
+			margin-left: -1%;
+			height: 7.5vh;
+  }
+  figure{
+    display:flex;
+    flex-direction: column;
+  }
+  .xyz{
+    text-align: center;
+  }
+  .loc2{
+    width: 150% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .loc{
+    padding:0px !important;
+    width:30%;
+    height: 100%;
+    margin: 0px !important;
+      }
+  ._3SnXL{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width:80%;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .modd{
+    font-size: 1rem;
+    
+  }
+  
+  .modal_2{
+    display: none; /* Hidden by default */
+    width:100%;
+    margin-top: 30%;
+  }
+  .modal_2 .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  
+  border: 1px solid #888;
+  
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+  .modd2{
+    width: 80%;
+    height: 25%;
+    margin: 7px !important;
+    text-align: center;
+    justify-content: center;
+  }
+  
+}
+@media (min-width:1024px){
+    .abc1{
+    background-color:#f4813f;
+    max-height: 200px;
+  }
+  .abc3{
+    padding:3px;
+  }
+  .abc4{
+      width:75%;
+		
+			margin-left: -1%;
+			height: 7.5vh;
+  }
+  .xyz{
+    margin-right: 18%;
+  }
+  .loc{
+    padding: 0px !important;
+    width:10%;
+    height:100%;
+    margin: 0px !important;
+  }
+  .loc2{
+    width:500px;
+  }
+  .modal_2 {
+display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  right: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  -webkit-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+
+}
+/* Modal Content */
+.modal_2 .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(226, 23, 23);
+  text-decoration: none;
+  cursor: pointer;
+}
+.modd{
+  font-size: 1.75rem;
+ 
+}
+.modd2{
+  width: 50%;
+  margin-top: 15px;
+}
+.welcome-area{
+    margin-left: 0px;
+}
+
+
+
+}
+
 </style>
 </head>
 
-<body>
+<body class="skin-light">
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <!-- ***** Preloader Start ***** -->
@@ -524,96 +729,84 @@ form {
 
 
     <!-- ***** Header Area Start ***** -->
-    <div class="_3cTdj">
-                <div class="_6n5xr"></div>
-                <div class="_8KMep">
-                    <div class="_2MjsM KbFCX _3Tn87 _1M8sW"><a class="_2V7rq _3p1_b" href="index.html"><img class="_536c"
-                                src="assets/images/logo2.jpeg"
-                                alt="PharmEasy logo" /></a>
-                        <div class="oHXcU">
-                            <div class="_1xVvP">
-                                <div class="wgDA6">
-                                    
-                                    <div tabindex="0" role="button"
-                                        class="_2tdEn _1pXi6 _2VyyV _2qwUd _15jwV _1IvSS _10mIt" aria-label="Search">
-                                        <div class="_2b5-9 undefined" >
-													<select class="form-select" aria-label="Default select example" 
-													style="width: 19%;height: 7.5vh;border: none;">
-													  <option selected>Select Location</option>
-													  <option value="1">One</option>
-													  <option value="2">Two</option>
-													  <option value="3">Three</option>
-													</select>                                          
-													<input type="email" 
-													id="exampleFormControlInput1" placeholder="Search for Medicines/ Healthcare Products"
-													style="
-																			width: 76%;
-																			border: none;
-																			margin-left: -1%;
-																			height: 7.5vh;
-																		">
-													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"style="
-																				background: white;
-																				height: 7.5vh;
-																				width: 3%;
-																				padding-right: 1%;
-																			">
-													  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-													</svg>					
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="_3SnXL" id="_123v">
-                                    <div tabindex="0" role="button" class="_2tdEn _1pXi6 _1D8Iz">
-                                        <div>Add a
-                                            <!-- -->prescription
-                                            <!-- -->!
-                                        </div>
-                                        <div class="_35UmJ">Here<svg width="15" height="15" viewBox="0 2 20 20">
-                                                <path fill="currentColor" fill-rule="evenodd"
-                                                    d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"></path>
-                                            </svg></div>
-                                    </div>
-                                </div>
-				<div class="Ojs9t _1-lsk" id="123v2" style="display:none;">
-					<div tabindex="0" role="button" class="_2tdEn _1pXi6 kjKnY">x</div>
-					<div class="_10ZfG" style="display:flex;">
-						<strong><span class="_2LLZd">Don't have a prescription?></span>
-							<div class="_3dTFq"> <span class="_3RCfr">Don't worry</span></div>
-					</div>
-					<div>
-						<button type="button" class="btn btn-success">Upload</button>
-					</div>
-				    </div>
-                            </div>
-                            <div class="_1xVvP">
-                                <div class="SbvHK _3l61w">
-                                    <div class="_1d9Ep"><a class="KSY3N" href="index.html">Instruments</a>
-									<a class="KSY3N" href="index.html">Healthcare
-                                            and Fitness</a><a class="KSY3N" href="index.html">Consult a Doctor</a>
-											<a class="KSY3N" href="index.html">Diagnostic Tests</a>
-											<a class="KSY3N" href="quickorder.html">Quick Order</a></div>
-                                    <div class="_3iGxG"><a class="lbgdE" href="index.html"><img class="jEJAq"
-                                                src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg"
-                                                alt="" /><span>Discounts</span></a>
-                                        <div tabindex="0" role="button" class="_2tdEn _1pXi6 lbgdE"><img class="_2kNHc"
-                                                src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg"
-                                                alt="" /><a href="login.html" style="
-																color: white;
-															"><span >Login / Signup</span></a></div><a class="lbgdE _32Xuq"
-                                            href="cart.html"><img class="_115IV"
-                                                src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg"
-                                                alt="" /><span>Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     <!-- ***** Header Area End ***** -->
 
-
+    <header class="abc1">
+    
+        <nav class="navbar navbar-light navbar-expand-sm" style="background-color: #f4813f;"> 
+          <div class="container"> 
+            <div class="row row-content">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="abc2 col-sm-1">
+                <a class="navbar-brand mr-auto" href="./index.html"><img src="assets/images/logo2.jpeg" style="height:100px; width:50px; left:0;"></a>
+              </div>
+              <div class="col-12 col-sm-8" style="margin-top:25px ; padding-left: 50px;">
+                                    <div class="input-group">
+                                      <div class="input-group-prepend">
+                                        <button class="loc btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-compass fa-lg align-items-center"></span></button>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="#">Location One</a>
+                                          <a class="dropdown-item" href="#">Location Two</a>
+                                          <a class="dropdown-item" href="#">Location Three</a>
+                                         </div> 
+            
+                                      <div class="loc2">
+                                      <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search for Medicines/ Healthcare Products">
+                                    </div>
+                                    </div>
+                              </div>      
+              </div>
+  
+                        <div class="col-12 col-sm-2 ml-auto" style="padding: 20px;">
+                          <div class="_3SnXL" id="_123v">
+                            <div tabindex="0" role="button" class="_2tdEn _1pXi6 _1D8Iz">
+                                <div>Add a
+                                    <!-- -->prescription
+                                    <!-- -->!
+                                </div>
+                                <div class="_35UmJ"><button id="myBtn" class="btn btn-primary btn-sm">Here</button>
+                                <!-- <svg width="15" height="15" viewBox="0 2 20 20">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"></path>
+                                    </svg>-->
+                                    </div>
+                            </div>
+                        </div>
+                        <div id="myModal" class="modal_2" >
+                          <div class="modal-content">
+                              <span class="close" style="text-align:right;">&times;</span>
+                              <div class="modd">
+                                  <h4>Don't have a prescription?</h4>
+                                  <h5 style="font-style: italic; ">Add prescription</h5>
+                              </div>
+                              <button type="button" class="modd2 btn btn-success" >Upload </button>
+                          </div>
+  
+                      </div>
+                        </div>       
+              <div class="abc3 col-12 col-sm-12 collapse navbar-collapse" id="Navbar">
+                  <ul class="navbar-nav ml-auto mr-auto">
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="./index.html">Instruments</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="#"> Health & Fitness</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="#">Consult a Doctor</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="#">Diagnostic Test</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="./quickorder.html">Quick Order</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="#"><span class="fa fa-percent"></span>  Discounts</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="./login.html"><span class="fa fa-smile-beam"></span>  Login/Signup</a></li>
+                      <li class="nav-item" style="padding:5px; padding-top: 0px;"><a class="nav-link" href="./cart.html"><span class="fa fa-cart-plus"></span> Cart</a></li>
+  
+                  </ul>
+                  </div>
+              </div>
+            
+              
+          </div>
+        </nav>
+          
+    </header>
+  
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
 
@@ -621,7 +814,7 @@ form {
         <div class="header-text">
             <div class="container">
                 <div class="row">
-                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                    <div class="left-text col-lg-6 offset-1 col-md-11 col-sm-11 col-xs-12"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1><em>Smiling India</em></h1>
                         <p style="color:#1AF1F3;">Your Health Is Our Priority</p> 
@@ -693,7 +886,7 @@ form {
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
-                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                <!--<div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
                     <ul style="width: 100%;">
                         <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s" style="width: 14%;">
                             <lottie-player src="assets/json_files/medicine.json" background="transparent"  speed="1" loop autoplay></lottie-player>
@@ -734,7 +927,7 @@ form {
                                 </div>
                         </li>
                     </ul>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -892,11 +1085,7 @@ form.addEventListener("submit", ev => {
 //# sourceURL=pen.js
     </script>
 
-  <script>
-	  document.getElementById("_123v").onClick= function(){
-		  document.getElementById("123v2").style.display=block;
-	  }
-	    </script>
+  
 <script>
 		$(document).ready(function(){
 		  $("input").focus(function(){
@@ -910,6 +1099,34 @@ form.addEventListener("submit", ev => {
 			$("section").css("filter", "blur(0px)");
 		  });
 		});
+</script>
+<!--Modal-->
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
