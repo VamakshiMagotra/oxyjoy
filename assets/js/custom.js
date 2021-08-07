@@ -39,7 +39,7 @@
 
 
 	// Scroll animation init
-	window.sr = new scrollReveal();
+	// window.sr = new scrollReveal();
 
 
 	// Menu Dropdown Toggle
@@ -215,13 +215,15 @@
 			});
 		}
 
-		$("#preloader").animate({
-			'opacity': '0'
-		}, 600, function () {
-			setTimeout(function () {
-				$("#preloader").css("visibility", "hidden").fadeOut();
-			}, 300);
-		});
+		// $("#preloader").animate({
+		// 	'opacity': '0'
+		// }, 600, function () {
+		// 	setTimeout(function () {
+		// 		$("#preloader").css("visibility", "hidden").fadeOut();
+		// 	}, 300);
+		// });
+
+		$('#preloader').fadeOut();
 	});
 
 

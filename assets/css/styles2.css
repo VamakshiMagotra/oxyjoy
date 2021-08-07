@@ -1,0 +1,68 @@
+.list{
+    margin:10px ;
+    padding:0 10px;
+}
+.card{
+    width:18rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-title{
+    color:#000;
+    margin:0;
+}
+.card-in{
+    font-size: small;
+    color:#838383;
+    max-height: 20px;
+}
+.card-inn{
+    font-size: x-small;
+    color:#838383;
+    max-height: 20px;
+}
+.card-price{
+    color:#000;
+    font-size:medium;
+    
+}
+.discount{
+    color:red;
+}
+.quantity{
+    max-width:40px;
+}
+.def-number-input{
+    position: relative;
+}
+
+@media (max-width: 768px){
+    .card{
+        margin-top:10px;
+    }
+    .list{
+        padding: 0px;
+        margin:2px;
+    }
+    .card a{
+        height:100px;
+        width:100px;
+    }
+    .card-in{
+        font-size: smaller;
+    }
+    .card-inn{
+        font-size:xx-small ;
+    }
+    .card{
+        width:fit-content;
+ 
+    }
+    .card-body{
+        width:fit-content;
+        padding: 2px;
+    }
+    .list_phone{
+        padding: 0px;
+    }
+}
