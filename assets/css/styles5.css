@@ -1,0 +1,79 @@
+.description_body{
+    display: flex;
+    width:100%;
+}
+.descrip{
+    align-items: center;
+    align-self: center;
+    padding: 5px;
+    margin-left: 4%;
+}
+.descrip button{
+    background-color: #f4813f; 
+    padding: 10px; 
+    border-radius: 5px;
+    border:2px solid #efefef;
+    margin-top: 10px;
+}
+.image_des{
+    width:max-content;
+}
+.medical{
+    width: calc(20vw - 20px) !important;
+}
+.side{
+    margin: 5px 8px;
+    background-color: rgba(238, 238, 238, 0.329);
+}
+.DrugIndex{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px hsl(0deg 0% 84% / 30%);
+    padding: 15px;
+    color: #f4813f;
+}
+.all{
+    display: flex;
+}
+.main_header{
+    width:60%;
+    /* display:flex; */
+    margin-top: 20px;
+    margin-left:10px;
+}
+.sub_header{
+    width:40%;
+    margin-top: 40px;
+    margin-left:10px;
+    margin-right:20px;
+}
+.sub_header img{
+    height:100px;
+    width:100px;
+    border: 2px solid #efefef;
+}
+.buy_tog{
+    display: flex;
+    margin: 20px 10px;
+    /* justify-content: center; */
+    margin-left: 0;
+}
+#overview, #side_effects, #uses_and_benefits, #how_to_use, #how_it_works, #safety_advice{
+    margin-top: 20px;
+}
+#side_effects li{
+    list-style-type: circle;
+    margin-left: 40px;
+}
+.safe{
+    margin-top: 10px;
+    background-color: #ffd8bf6e;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    width: fit-content;
+}
+#safety_advice p{
+    color:#000;
+    margin-left: 20px;
+}
