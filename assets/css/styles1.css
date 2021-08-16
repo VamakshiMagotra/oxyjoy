@@ -167,6 +167,7 @@
     .loc2{
         width:55%;
         border-radius: 50px;
+        display: flex;
     }
     .pq {
         padding-left: 0 !important;
